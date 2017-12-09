@@ -123,14 +123,19 @@ int guessNumber;
 }
 
 -(void)playSoundEffect: (NSString *) effectName {
+
+    NSDataAsset* soundAsset = [[NSDataAsset alloc] initWithName:effectName];
+    NSError *error;
+    audioEffect = [[AVAudioPlayer alloc] initWithData:soundAsset.data fileTypeHint:@"wav" error:&error];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource: effectName ofType:@"wav"];
-    NSURL *pathURL = [NSURL fileURLWithPath: path];
-    audioEffect = [[AVAudioPlayer  alloc] initWithContentsOfURL:pathURL error:nil];
-    audioEffect.numberOfLoops = 0;
-    [audioEffect prepareToPlay];
-    [audioEffect play];
-    
+    if (!audioEffect) {
+        NSLog(@"Player Failed with error: %@", error);
+    } else {
+        audioEffect.numberOfLoops = 0;
+        [audioEffect prepareToPlay];
+        [audioEffect play];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {

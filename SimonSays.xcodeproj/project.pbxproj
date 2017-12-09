@@ -10,10 +10,10 @@
 		BA1641201FD4911300186158 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA16411F1FD4911300186158 /* AppDelegate.m */; };
 		BA1641231FD4911300186158 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1641221FD4911300186158 /* ViewController.m */; };
 		BA1641261FD4911300186158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1641241FD4911300186158 /* Main.storyboard */; };
-		BA1641281FD4911300186158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1641271FD4911300186158 /* Assets.xcassets */; };
 		BA16412B1FD4911300186158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1641291FD4911300186158 /* LaunchScreen.storyboard */; };
 		BA16412E1FD4911300186158 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA16412D1FD4911300186158 /* main.m */; };
 		BA1641361FD491CD00186158 /* SimonGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1641351FD491CD00186158 /* SimonGameViewController.m */; };
+		BA5277021FDC7DE30067B61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1641271FD4911300186158 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,8 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5277021FDC7DE30067B61E /* Assets.xcassets in Resources */,
 				BA16412B1FD4911300186158 /* LaunchScreen.storyboard in Resources */,
-				BA1641281FD4911300186158 /* Assets.xcassets in Resources */,
 				BA1641261FD4911300186158 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
